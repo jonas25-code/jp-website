@@ -1392,3 +1392,46 @@ nav a:focus-visible,
     grid-column: auto;
   }
 }
+
+/* ===== CONTACT BUTTONS ===== */
+
+.contact-section {
+  scroll-margin-top: 100px;
+  background: #f8fafc;
+}
+
+.contact-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 25px;
+}
+
+.whatsapp-btn {
+  background: #15803d;
+  border-color: #15803d;
+  color: #ffffff;
+}
+
+.whatsapp-btn:hover {
+  background: #166534;
+  border-color: #166534;
+  color: #ffffff;
+}
+
+.contact-section .note a {
+  color: #2563eb;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 500px) {
+  .contact-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .contact-actions .btn {
+    width: 100%;
+  }
+}
