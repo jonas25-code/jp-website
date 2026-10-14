@@ -429,3 +429,240 @@ header.navbar nav a {
     gap: 10px 16px;
   }
 }
+
+/* ===== JP PORTFOLIO PROFESSIONAL POLISH ===== */
+
+/* Smooth transitions */
+.navbar,
+.card,
+.btn,
+nav a {
+  transition: all 0.25s ease;
+}
+
+/* Refined navigation */
+.navbar {
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.06);
+  border-bottom: 1px solid #e2e8f0;
+}
+
+nav a {
+  position: relative;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #2563eb;
+}
+
+/* Premium hero introduction */
+.intro {
+  display: inline-block;
+  padding: 7px 13px;
+  background: #dbeafe;
+  border-radius: 30px;
+  margin-bottom: 12px;
+}
+
+/* Improved project and skill cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(100%, 230px), 1fr)
+  );
+  gap: 24px;
+  align-items: stretch;
+}
+
+.card {
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  box-shadow: 0 8px 28px rgba(15, 23, 42, 0.05);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #bfdbfe;
+  box-shadow: 0 16px 35px rgba(37, 99, 235, 0.12);
+}
+
+.card h3 {
+  color: #1d4ed8;
+}
+
+/* More polished buttons */
+.btn {
+  border: 1px solid #2563eb;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(37, 99, 235, 0.16);
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 9px 22px rgba(37, 99, 235, 0.23);
+}
+
+/* Better section separation */
+.section {
+  scroll-margin-top: 90px;
+}
+
+.section:nth-of-type(even) {
+  background: #f8fafc;
+}
+
+.section h2 {
+  letter-spacing: -0.7px;
+}
+
+/* Keyboard accessibility */
+nav a:focus-visible,
+.btn:focus-visible,
+.card a:focus-visible {
+  outline: 3px solid #93c5fd;
+  outline-offset: 4px;
+}
+
+/* Phone adjustments */
+@media (max-width: 600px) {
+  .cards {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+  }
+
+  .card {
+    padding: 24px;
+  }
+
+  .section {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  nav {
+    row-gap: 10px;
+  }
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition: none !important;
+  }
+}
+/* ===== JP PORTFOLIO PROFESSIONAL DESIGN ===== */
+
+.navbar {
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.06);
+  border-bottom: 1px solid #e2e8f0;
+}
+
+nav a {
+  transition: color 0.25s ease;
+}
+
+nav a:hover {
+  color: #2563eb;
+}
+
+.intro {
+  display: inline-block;
+  padding: 7px 13px;
+  background: #dbeafe;
+  color: #1d4ed8;
+  border-radius: 30px;
+  margin-bottom: 12px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(100%, 230px), 1fr)
+  );
+  gap: 24px;
+  align-items: stretch;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  box-shadow: 0 8px 28px rgba(15, 23, 42, 0.05);
+  transition: all 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #bfdbfe;
+  box-shadow: 0 16px 35px rgba(37, 99, 235, 0.12);
+}
+
+.card h3 {
+  color: #1d4ed8;
+}
+
+.btn {
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(37, 99, 235, 0.16);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 9px 22px rgba(37, 99, 235, 0.23);
+}
+
+.section {
+  scroll-margin-top: 90px;
+}
+
+.section h2 {
+  letter-spacing: -0.7px;
+}
+
+nav a:focus-visible,
+.btn:focus-visible,
+.card a:focus-visible {
+  outline: 3px solid #93c5fd;
+  outline-offset: 4px;
+}
+
+@media (max-width: 600px) {
+  .cards {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+  }
+
+  .card {
+    padding: 24px;
+  }
+
+  .section {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  nav {
+    row-gap: 10px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition: none !important;
+  }
+}
