@@ -746,3 +746,96 @@ nav a:focus-visible,
     padding: 20px;
   }
 }
+
+/* ===== ABOUT ME PROFESSIONAL DESIGN ===== */
+
+.about-section {
+  background: #f8fafc;
+}
+
+.about-inner {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.about-kicker {
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 12px !important;
+}
+
+.about-lead {
+  max-width: 780px;
+  margin: 0 auto 18px !important;
+  color: #0f172a;
+  font-size: clamp(19px, 3vw, 25px);
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.about-description {
+  max-width: 760px;
+  margin: 0 auto 35px !important;
+  color: #475569;
+  font-size: 16px;
+}
+
+.about-highlights {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 35px;
+  text-align: left;
+}
+
+.about-item {
+  padding: 25px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.05);
+  transition: transform 0.25s ease,
+              box-shadow 0.25s ease;
+}
+
+.about-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(37, 99, 235, 0.10);
+}
+
+.about-number {
+  display: inline-block;
+  margin-bottom: 15px;
+  color: #2563eb;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.about-item h3 {
+  color: #0f172a;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.about-item p {
+  color: #475569;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+@media (max-width: 700px) {
+  .about-highlights {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .about-item {
+    padding: 22px;
+  }
+
+  .about-description {
+    font-size: 15px;
+  }
+}
